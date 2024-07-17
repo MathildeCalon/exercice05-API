@@ -37,6 +37,7 @@ public class CarResource {
     @GET
     @Produces(MediaType.APPLICATION_JSON)
     public List<Car> getAllCars() {
+        carService.save(1, "Citroen", 2013, "grise");
         List<Car> cars = carService.findAll();
         if(cars != null && cars.size() > 0) {
             return null;

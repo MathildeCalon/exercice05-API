@@ -13,9 +13,6 @@ public class CarService {
     private List<Car> carList = new ArrayList<>();
 
     public Car save(int id, String brand, int year, String color) {
-        Car car1 = new Car(1, "Citroen", 2013, "grise");
-        carList.add(car1);
-
         Car car = new Car(id, brand, year, color);
         carList.add(car);
         return car;
